@@ -1,0 +1,27 @@
+{
+  "defaultCommandTimeout" :10000,
+
+  "reporter" :"mochawesome",
+
+  "projectId": "2rztsm",
+
+  "env":{
+    "url_prod_Cart": "https://www.wayfair.com/?ft_override_enable_project_mercury_desktop=OFF&libra_o=c9b3bbdb-5e4c-4221-8d1b-41f43696c982&ft_override_enable_auth_decoupled=ON",
+
+    "url_Cart": "https://www.wayfair.com",
+
+    "url_prod_libraTest": "https://wayfair.com/?ft_override_enable_auth_decoupled=ON&libra_o=c96f4c2a-a9b9-43ad-85f0-ca3802b424d1",
+    
+    "url_prod1": "https://www.wayfair.com/?view_as_customer=1&libra_o=c9b3bbdb-5e4c-4221-8d1b-41f43696c982&ft_override_enable_auth_decoupled=ON",
+
+    "url_prod_libra": "https://www.wayfair.com/?libra_o=c9b3bbdb-5e4c-4221-8d1b-41f43696c982&ft_override_enable_auth_decoupled=ON",
+
+    "url_prod_libraTest_ca": "https://www.wayfair.ca/?libra_o=c9b3bbdb-5e4c-4221-8d1b-41f43696c982&ft_override_enable_auth_decoupled=ON",
+    
+    "url_prod_libraTest_ca_fr":"https://www.wayfair.ca/fr/?libra_o=c9b3bbdb-5e4c-4221-8d1b-41f43696c982&ft_override_enable_auth_decoupled=ON",
+
+    "url_prod_libra_de":"https://www.wayfair.de/?libra_o=c9b3bbdb-5e4c-4221-8d1b-41f43696c982&ft_override_enable_auth_decoupled=ON",
+
+    "url_uk": "https://www.wayfair.co.uk/?libra_o=c9b3bbdb-5e4c-4221-8d1b-41f43696c982&ft_override_enable_auth_decoupled=ON"
+  }
+}

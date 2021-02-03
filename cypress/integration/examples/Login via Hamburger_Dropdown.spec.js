@@ -153,10 +153,5 @@ describe('ExistingUser_SMS_Enrolled_1_My_Account_&_Orders',function()
       element.getSignIn_Button().click({force: true})
       cy.wait(1000)
 
-      login.clickHumberger_icon()
-      cy.wait(1000)
-
-      login.ClickButton_SignOut() 
-      cy.wait(1000)
     })   
 })

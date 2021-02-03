@@ -13,7 +13,7 @@ describe('Cart Functionality',function()
        })
     })
     
-    it('Verify sign in via Cart Link NotSMSEnrolled_ExistingUser',function()
+    it('Verify signIn via Cart HEADER to see items added',function()
     {
        cy.visit(Cypress.env('url_Cart'))
 
@@ -34,11 +34,44 @@ describe('Cart Functionality',function()
        element.getPassword_TextField().type(this.data.password)
    
        element.getSignIn_Button().click()
-
+       cy.wait(1000)
+       
        login.clickHumberger_icon()
       cy.wait(1000)
 
       login.ClickButton_SignOut() 
       cy.wait(1000)
     })
+
+      
+       it('Verify signIn via Cart HEADER to View saved items ',function()
+    {
+       cy.visit(Cypress.env('url_Cart'))
+
+       const login = new ExistingUserPage()
+       const element = new ElementIDPage()
+
+       login.clickPopUp_Element_Cart()
+       cy.wait(1000)
+
+       cy.get("[data-hb-id='pl_link']").contains("a","Cart").click()
+       cy.wait(1000)
+
+       cy.get("[data-codeception-id='cart-sign-in']").click()
+
+       element.getEmail_TextField().type(this.data.Recognised_NotSMS_email)
+      
+       element.getContinue_Button().click()
+       cy.wait(1000)
+       
+       element.getPassword_TextField().type(this.data.password)
+   
+       element.getSignIn_Button().click()
+
+       login.clickHumberger_icon()
+      cy.wait(1000)
+
+      login.ClickButton_SignOut() 
+      cy.wait(1000)
+    })   
 })   
